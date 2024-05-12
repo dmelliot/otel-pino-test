@@ -2,10 +2,12 @@
   "name": "otel-pino-test",
   "version": "1.0.0",
   "main": "src/index.ts",
+  "license": "MIT",
   "scripts": {
     "build": "tsc",
     "start": "node ./bin/app.js",
-    "dev": "ts-node ./src/app.ts"
+    "dev": "ts-node ./src/app.ts",
+    "devpretty": "clear; ts-node ./src/app.ts | yarn pino-pretty"
   },
   "devDependencies": {
     "@types/node": "^20.12.11",
